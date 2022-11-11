@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="85dp"
+        android:layout_height="30dp"
+        android:text="Число 1"
+        android:textSize="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="100dp"
+         />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="85dp"
+        android:layout_height="30dp"
+        android:text="Число 2"
+        android:textSize="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/text1"
+         />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text=""
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сложить"
+        android:layout_below="@id/textResult"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+         />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вычесть"
+        android:layout_below="@id/textResult"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25dp"
+        />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="85dp"
+        android:layout_alignParentEnd="true"
+         />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/editTextNumberDecimal"
+         />
+
+</RelativeLayout>
